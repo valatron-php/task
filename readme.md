@@ -58,3 +58,4 @@ Take into account following:
     1. List of all users
     1. Each user have iterable structure of roles
     1. Each user have iterable structure of tokens that are max. 2 days old
+1. [optional] Provide document/file that will help to setup coding style/formatting to all your colleagues. 
