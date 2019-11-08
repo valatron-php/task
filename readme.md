@@ -1,7 +1,9 @@
 # Task description
 There are no limitations in terms of framework/libraries usage.
-However try to create your app as project that will expand in future.
+Your app should follow MVC pattern and use OOP.
+Try to create your app as project that will expand in future.
 Optimal time for finishing the task is up to **2 hours**.
+
 
 ## Domain: 
 You have three tables in a relation database. These tables are defined as follows:
@@ -31,6 +33,7 @@ table: token
 | created_at | timestamp |
 | id_user | integer (foreign key to user.id) NOT NULL |
 
+
 ## Expectations
 Your app should do successfully the following:
 1. Have an endpoint at `api/tokens` which will return a JSON reply with all tokens and all their data.
@@ -41,16 +44,17 @@ Your app should do successfully the following:
     1. Must have only uppercase characters [A-Z].
     1. Ensure that app cannot be successfully deployed if rules above are not valid (someone changes the function).
     
+    
 ## Conditions & additional points
 Take into account following:
 
 1. Creation of users & roles (if present) should be standalone process.
 1. Your code will be launched on following server:
+    1. Linux Debian x64
     1. php-fpm 7.2.24
     1. nginx server
-    1. Linux Debian x64
-    1. Your code is deployed with Travis CI
     1. Unknown relation database (PostgreSQL, MySQL, MSSQL, MariaDB...)
+    1. Your code is deployed with Travis CI
 1. Your code will be also sent to your colleagues developers with different versions of PHP and systems (Windows, Mac OS...).
 1. Columns like `id`, `name`, `created_at` and `id_users` are going to be used often in future development.
 
@@ -62,6 +66,7 @@ Following are bonus additional points:
     1. Each user have iterable structure of roles
     1. Each user have iterable structure of tokens that are max. 2 days old
 1. [optional] Provide document/file that will help to setup coding style/formatting to all your colleagues.
+
 
 ## Need help?
 Don't be afraid and feel free to ask for any additional information on: martin.jagr@valatron.com. 
