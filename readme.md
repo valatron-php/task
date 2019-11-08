@@ -1,6 +1,7 @@
 # Task description
-This task should take up to **1 MH**. There are no limitations in terms of framework/libraries usage.
+There are no limitations in terms of framework/libraries usage.
 However try to create your app as project that will expand in future.
+Optimal time for finishing the task is up to **2 hours**.
 
 ## Setup: 
 You have three tables in a relation database. These tables are defined as follows:
@@ -35,7 +36,7 @@ Your app should do successfully the following:
 1. Have an endpoint at `api/tokens` which will return a JSON reply with all tokens and all their data.
 1. Implement provided interfaces in `model` directory with described functionality.
 1. Generate random amount of assigned tokens.
-1. Token name must be obtained from function, which will always return string following these rules:
+1. Token name must be obtained from a function, which will always return string following these rules:
     1. Must be exactly 5 characters long
     1. Must have only uppercase characters only [A-Z]
     1. Ensure that app cannot be successfully deployed if rules above are not valid (someone changes the function)
@@ -58,4 +59,4 @@ Take into account following:
     1. List of all users
     1. Each user have iterable structure of roles
     1. Each user have iterable structure of tokens that are max. 2 days old
-1. [optional] Provide document/file that will help to setup coding style/formatting to all your colleagues. 
+1. [optional] Provide document/file that will help to setup coding style/formatting to all your colleagues.
