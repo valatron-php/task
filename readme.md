@@ -2,14 +2,14 @@
 There are no limitations in terms of framework/libraries usage.
 Your app should follow MVC pattern and use OOP.
 Try to create your app as project that will expand in future.
-Optimal time for finishing the task is up to **2 hours**.
+Average spent time is **30-50 minutes** using frameworks (tested on Symfony & Laravel). 
+However optimal time for finishing the task is up to **2 hours**.
 
 
 ## Domain: 
 You have three tables in a relation database. These tables are defined as follows:
 
-table: user
----
+### table: user
 | column | type |
 | --- | --- |
 | id | integer PRIMARY |
@@ -17,15 +17,13 @@ table: user
 | created_at | timestamp |
 | id_role | integer (foreign key to role.id) NOT NULL |
 
-table: role
----
+### table: role
 | column | type |
 | --- | --- |
 | id | integer PRIMARY |
 | name | string(5) |
 
-table: token
----
+### table: token
 | column | type |
 | --- | --- |
 | id | integer PRIMARY |
@@ -37,12 +35,11 @@ table: token
 ## Expectations
 Your app should do successfully the following:
 1. Have an endpoint at `api/tokens` which will return a JSON reply with all tokens and all their data.
-1. Implement provided interfaces in `model` directory with described functionality.
-1. Generate random amount of assigned tokens.
-1. Token name must be obtained from a function, which will always return string following these rules:
-    1. Must be exactly 5 characters long.
-    1. Must have only uppercase characters [A-Z].
-    1. Ensure that app cannot be successfully deployed if rules above are not valid (someone changes the function).
+1. Implement provided interfaces in `model` directory.
+1. Generate random amount of assigned tokens. Token name must:
+    1. be exactly 5 characters long.
+    1. have only uppercase characters [A-Z].
+    1. If someone changes function that generates name, the app cannot be successfully deployed.
     
     
 ## Conditions & additional points
@@ -58,14 +55,14 @@ Take into account following:
 1. Your code will be also sent to your colleagues developers with different versions of PHP and systems (Windows, Mac OS...).
 1. Columns like `id`, `name`, `created_at` and `id_users` are going to be used often in future development.
 
-Following are bonus additional points:
+### Bonus additional points:
 
 1. [optional] Describe OR prepare solution for situation, when tables are missing.
-1. [optional] Prepare structure for template and render it using HTML that will have following:
+1. [optional] Describe OR prepare structure for template and render it using HTML that would have following:
     1. List of all users
     1. Each user have iterable structure of roles
     1. Each user have iterable structure of tokens that are max. 2 days old
-1. [optional] Provide document/file that will help to setup coding style/formatting to all your colleagues.
+1. [optional] Describe OR provide document/file that will help to setup coding style/formatting to all your colleagues.
 
 
 ## Need help?
