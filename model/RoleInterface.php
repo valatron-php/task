@@ -18,7 +18,7 @@ interface RoleInterface
     /**
      * Returns array of users with this role
      *
-     * @return array|null
+     * @return UserInterface[]|null
      */
     public function getUsers(): ?array;
 }
